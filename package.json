@@ -13,7 +13,7 @@
       "require": "./dist/set-union.cjs"
     }
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Missing union operation over Set.",
   "scripts": {
     "test": "vitest --run",
@@ -22,7 +22,8 @@
     "build:watch": "vite build --watch"
   },
   "keywords": [
-    "iter", "Set"
+    "iter",
+    "Set"
   ],
   "author": {
     "name": "Patryk Stępień"
