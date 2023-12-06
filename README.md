@@ -20,7 +20,7 @@ import {union} from '@fightingdreamer/set-union'
 const a = new Set([1,2,3])
 const b = [3,4,5][Symbol.iterator]()
 const result = union(a, b)
-const expect = [1, 5]
+const expect = [1,2,3,4,5]
 for (const value of expect) {
   console.assert(result.has(value))
 }
@@ -35,7 +35,7 @@ const sets = [
   [5,6,7][Symbol.iterator]()
 ][Symbol.iterator]()
 const result = unionMany(sets)
-const expect = [1,4,7]
+const expect = [1,2,3,4,5,6,7]
 for (const value of expect) {
   console.assert(result.has(value))
 }
@@ -49,7 +49,7 @@ const {union} = require('@fightingdreamer/set-union')
 const a = new Set([1,2,3])
 const b = [3,4,5][Symbol.iterator]()
 const result = union(a, b)
-const expect = [1, 5]
+const expect = [1,2,3,4,5]
 for (const value of expect) {
   assert(result.has(value))
 }
@@ -64,7 +64,7 @@ const sets = [
   [5,6,7][Symbol.iterator]()
 ][Symbol.iterator]()
 const result = unionMany(sets)
-const expect = [1,4,7]
+const expect = [1,2,3,4,5,6,7]
 for (const value of expect) {
   assert(result.has(value))
 }
