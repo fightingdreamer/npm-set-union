@@ -13,7 +13,7 @@
       "require": "./dist/set-union.cjs"
     }
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Missing union operation over Set.",
   "scripts": {
     "test": "vitest --run",
