@@ -13,7 +13,7 @@
       "require": "./dist/set-union.cjs"
     }
   },
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Missing union operation over Set.",
   "scripts": {
     "lint": "eslint lib",
