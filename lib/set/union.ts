@@ -1,5 +1,3 @@
-import { reduceWithInitial } from "@fightingdreamer/iter-reduce";
-
 /**
  * Intersection between two Sets
  */
@@ -13,5 +11,7 @@ export function union<T>(a: Set<T>, b: Iterable<T>): Set<T> {
  * Intersection between n Sets
  */
 export function unionMany<T>(sets: Iterable<Iterable<T>>): Set<T> {
-  return reduceWithInitial(sets, union, new Set<T>());
+  const result = new Set<T>();
+  for (const set of sets) for (const elem of set) result.add(elem);
+  return result;
 }

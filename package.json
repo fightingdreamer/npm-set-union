@@ -42,8 +42,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@fightingdreamer/iter-reduce": "^0.1.1"
   }
 }
