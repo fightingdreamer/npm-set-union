@@ -10,9 +10,8 @@ export function union<T>(a: Set<T>, b: Iterable<T>): Set<T> {
 }
 
 /**
- * Intersection between two Sets
+ * Intersection between n Sets
  */
 export function unionMany<T>(sets: Iterable<Iterable<T>>): Set<T> {
   return reduceWithInitial(sets, union, new Set<T>());
-  return;
 }
