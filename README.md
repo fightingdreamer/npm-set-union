@@ -2,9 +2,9 @@
 
 ## Description
 
-Missing union operation for Set.
+Missing union operation for Set or any Iterable.
 
-Second implementation can do union opration between any number of iterables.
+Second implementation can do union operation between any number of iterables.
 
 ## Install
 
@@ -73,7 +73,7 @@ for (const value of expect) {
 ## Functions
 
 ```js
-function union<T>(a: Set<T>, b: Iterable<T>): Set<T>
+function union<T>(a: Iterable<T>, b: Iterable<T>): Set<T>
 ```
 
 Will apply union operation between Set and Iterable.
